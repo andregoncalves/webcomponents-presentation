@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>web-presentation demo</title>
+  <link rel="stylesheet" href="css/styles.css" charset="utf-8">
+  <link rel="stylesheet" href="css/transitions.css" media="screen" charset="utf-8">
+  <link rel="import" href="web-presentation.html">
+  
+  <link rel='import' href='https://cdn.rawgit.com/ChristianKohler/PrismComponents/master/dist/prism-components.html'>
+  <script src="https://use.fontawesome.com/da88d1f637.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+  <web-presentation>
+    <web-presentation-progress></web-presentation-progress>
+    <web-presentation-keyboardcontrols></web-presentation-keyboardcontrols>
+
+    <web-slide-title class="clear-bg" data-transition="moveFromBottom">
+      <h1 style="font-size: 4em">You don't need React</h1>
+      <h2 style="font-size: 3em; width: 80%; margin:auto; ">Brief hyperbole on the unnecessary complexity of current web development techniques and an introduction to 
+        web components as a simpler, native, and more maintainable solution.</h2>
+
+      <p style="font-size: 3em; font-weight: bold">André Gonçalves</p>
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
+    </web-slide-title>
+
+
+
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/config-files.png" style="width: 100%; margin-top: 1em">
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/npm-carl-sagan.png" style="width: 100%; margin-top: 1em">
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/state-of-frontend-tooling.png" style="width: 100%; margin-top: 1em">
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/hackaton-standards-for-success.png" style="width: 100%; margin-top: 1em">
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/webpack.png" style="width: 100%; margin-top: 1em">
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/maintenance.png" style="width: 100%; margin-top: 1em">
+    </web-slide>     
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/react-hello-world.png" style="width: 80%; margin-top: 1em">
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/components.png" style="width: 60%; margin-top: 1em">
+    </web-slide>    
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/think-before-you-code.png" style="width: 100%; margin-top: 1em">
+    </web-slide>    
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <h2>We have a fetish with complexity and abstraction</h2>
+      <h2>We build fragile over-engineered solutions</h2>
+      <h2>We love our tools too much</h2>
+      <h2>We like clever solutions, instead of solving problems people actually have</h2>
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The problem</h1>
+      <img src="img/simpler.png" style="width: 100%; margin-top: 1em">
+    </web-slide>    
+   
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The Better way <small>(tm)</small></h1>
+      
+      <h2>“Simplicity is a prerequisite for reliability.”<br>- E.W Dijkstra</h2>
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The Better way <small>(tm)</small></h1>
+      <img src="img/expert-js.png" style="width: 100%; margin-top: 1em">
+    </web-slide>       
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The Better way <small>(tm)</small></h1>
+
+      <h2>KISS - <u>Keep it simple stupid</u></h2>
+      <h2>Continuously fight complexity and unnecessary abstractions</h2>
+      <h2>Reduce the number of moving parts</h2>
+      <h2>Focus on the simplest solution that can work</h2>
+      <h2>Reduce the number of dev and prod dependencies</h2>
+      <h2>"Treat your dependencies like your own code"</h2>
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The Better way <small>(tm)</small></h1>
+      <img src="img/rauch.png" style="width: 100%; margin-top: 1em">
+    </web-slide>    
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>The Better way <small>(tm)</small></h1>
+      <p>Learn and invest on the web platform core, instead of <em>frameworks</em>:</p>
+      <h2>CSS instead of SASS/LESS/etc</h2>
+      <h2>ES6/7 instead of Typescript/CoffeeScrit/etc</h2>
+      <h2>Web Components instead of React/Angular/etc</h2>
+      
+      <p style="margin-top: 2em">Platform features will outlive <em>libraries</em></p>
+      <p>Reduce the number of dependencies and the abstraction level</p>
+    </web-slide>
+
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>But, but ...</h1>
+      <p>What are you talking about? React is cool and fast...</p>
+      <img src="img/speed-comparison.png" style="width: 100%; margin-top: 1em">
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1 style="margin-top: 100px">Always use the right tool for the job</h1>
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>Some ideas in React are actually awesome</h1>
+      <h2>React downstream dataflow</h2>
+      <p>components are supposed to be immutable and the data within them unable to change. This way, they will only listen to data that is flowing from upstream and not data that is coming from each other. That is why React.js is known for the creation of canonical data sources that will stay synchronized across the components that will pay attention to it. It is what makes it the best framework for creating highly interactive web applications.</p>
+      <h2>React uses Virtual DOM</h2>
+      <p>React uses a very efficient "diffing" algorithm for mutating the DOM only when necessary. It creates a lightweight tree from Javascript objects that mimic a DOM tree.</p>
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h2>But you can have those using native browser web components</h2>
+      <img src="img/spock-zoom.gif" style="width: 100%; height: auto; margin-top: 1em">
+    </web-slide>
+    
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h2>Let's build an extremely simple web components page with downstream data flow and virtual DOM "diffing"</h2>
+    </web-slide>
+
+    <web-slide class="clear-bg" data-transition="moveFromBottom">
+      <h1>Why components?</h1>
+      <ul>
+        <li>Web standards and browsers are evolving, so should we.</li>
+        <li>Reusing components from different frameworks is challenging, but it shouldn't be.</li>
+        <li>They make excellent leaf nodes, and can be dropped in other framework components like DOM.</li>
+      </ul>
+      <h2>Web components are...</h2>
+      <ul>
+        <li><b>Composable:</b> combine them together creating new experiences.</li>
+        <li><b>Encapsulated:</b> isolate markup, styles, and behavior.</li>
+        <li><b>Reusable:</b> can be extended, allowing you easily create new components from existing ones.</li>
+      </ul>
+    </web-slide>
+
+
+    <!-- The Basics-->
+    <web-slide class="green-bg" data-transition="moveToLeft">
+      <h1>The basics...</h1>
+      <h2>Custom Elements</h2>
+      <p>Browser APIs to define new HTML elements</p>
+      <h2>HTML Templates</h2>
+      <p>The <b>&lt;template&gt;</b> tag now allows documents to contain inert chunks of DOM</p>
+      <h2>Shadow DOM</h2>
+      <p>Encapsulated DOM and styling</p>
+      <h2>HTML Imports</h2>
+      <p>Declarative methods of importing HTML documents into other documents</p>
+    </web-slide>
+
+    <web-slide class="green-bg" data-transition="moveToLeft">
+      <h1>The index.html</h1>
+      <pre is="lang-markup" theme="dark">
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width"&gt;
+  &lt;title&gt;Clock&lt;/title&gt;
+  &lt;link rel="import" href="clock.html"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;cool-clock&gt;&lt;/cool-clock&gt;
+    &lt;cool-clock tz="Asia/Tokyo"&gt;&lt;/cool-clock&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+
+    </web-slide>
+
+
+    <web-slide class="green-bg" data-transition="moveToLeft">
+      <h1>The component.html</h1>
+
+    <pre is="lang-markup" theme="dark">
+&lt;template id="el-tmpl"&gt;
+  &lt;div id="my-clock"&gt;Clock&lt;/div&gt;
+&lt;/template&gt;
+  </pre>
+      
+      <pre is="lang-javascript" theme="dark">
+customElements.define('cool-clock', Clock);
+class Clock extends HTMLElement {
+
+	constructor () {
+		super();
+		this.state = {};
+	}
+
+	connectedCallback () {
+		this._attachShadowDOM();
+		this.setState({
+			date: new Date(),
+			tz: this.getAttribute('tz')
+		});
+	}
+
+  </pre>
+  </web-slide>
+
+    <web-slide class="green-bg" data-transition="moveToLeft">
+      <h1>The component.html (2)</h1>
+      <pre is="lang-javascript" theme="dark">
+setState (obj) {
+  this.state = obj;
+  this.render();
+}
+
+render () {
+	const d = this.state.date;
+	const tz = this.state.tz || "Europe/Lisbon";
+	let	html = `<div class="clock">${d.toLocaleString('pt', {timeZone: tz})}</div>`;
+
+	diff.innerHTML(this._root, html);
+}
+  </pre>
+   </web-slide>
+
+    <web-slide class="green-bg" data-transition="moveToLeft">
+      <h1>The app.js</h1>
+      <pre is="lang-javascript" theme="dark">
+class App {
+	constructor () {
+		let clocks = document.querySelectorAll('cool-clock');
+		setInterval(_ => {
+			clocks.forEach((c) => {
+				c.date = new Date();
+			});
+			
+		}, 500);	
+	}
+}
+new App();
+  </pre>
+
+  <a href="https://rawgit.com/andregoncalves/webcomponents-presentation/master/example/index.html" target="_blank">Working demo</a>
+   </web-slide>
+
+    <!-- Questions -->
+    <web-slide class="purple-bg" data-transition="moveFromBottom">
+      <h1>Questions?</h1>
+      <h1>Insults?</h1>
+      <h2>André Gonçalves (@andregoncalves)</h2>
+
+    </web-slide>
+
+  </web-presentation>
+</body>
+</html>
